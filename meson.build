@@ -1902,7 +1902,7 @@ endif
 
 dep_clang = null_dep
 if with_clc
-  llvm_libdir = dep_llvm.get_variable(cmake : 'LLVM_LIBRARY_DIR', configtool: 'libdir')
+  llvm_libdir = get_option('clang-libdir')
 
   dep_clang = cpp.find_library('clang-cpp', dirs : llvm_libdir, required : false)
 

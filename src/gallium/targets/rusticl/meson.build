@@ -64,7 +64,7 @@ configure_file(
   configuration : _config,
   input : 'rusticl.icd.in',
   output : 'rusticl.icd',
-  install : true,
+  install : false,
   install_tag : 'runtime',
   install_dir : join_paths(get_option('sysconfdir'), 'OpenCL', 'vendors'),
 )
